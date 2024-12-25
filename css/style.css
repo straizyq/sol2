@@ -332,11 +332,17 @@ a {
     }
 
     .info_underline {
-        width: 230px;
+        width: 200px;
+    }
+    .info_title {
+        font-size: 35px;
+    }
+    .info_list_style {
+        margin-right: 20px;
     }
 }
 
-@media(max-width: 534px) {
+@media(max-width: 568px) {
     .welcome_card {
         padding: 5px;
     }
@@ -383,32 +389,50 @@ a {
     }
 }
 
-@media(max-width: 330px) {
-    .info_title {
-        font-size: 30px;
-    }
+@media(max-width: 514px) {
+   
 
     .welcome_image {
-        width: 400px;
+        width: 250px;
     }
+
     .info_underline {
         width: 200px;
     }
+
     .info_content {
-        max-width: 79px;
+        max-width: 300px;
     }
+
     .history_block_years {
-        height: 25px;
+        height: auto;
+        width: auto;
         font-size: 9px;
         padding: 5px;
     }
-    .history_years  {
-        gap: 35px;
+
+    .history_years {
+        gap: 10px;
     }
+
     .history_block {
         padding: 2px;
+        width: 100px;
     }
-    .history {
-        background-size: cover;
+
+    .history_block_text {
+        font-size: 3px;
+        line-height: 10px;
     }
+    .welcome_card_content_title {
+        font-size: 15px;
+    }
+    .welcome_cards {
+        flex-wrap: wrap;
+    }
+    .history_title {
+        font-size: 50px;
+    }
+    
+
 }
