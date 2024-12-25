@@ -5,7 +5,7 @@ body {
     color: white;
     font-family: "Roboto", sans-serif;
     margin: 0;
-    overflow-x: hidden;
+
 }
 
 p,
@@ -173,6 +173,11 @@ a {
     position: relative;
 }
 
+.history .container {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .history_years {
     display: flex;
@@ -261,19 +266,28 @@ a {
 
 }
 
+.mobile {
+    margin-bottom: 70px;
+    display: none;
+}
+
+.history_content_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media(max-width: 900px) {
     .history_block_years {
-        width: 80px;
-        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 30px;
-    }
-
-    .history_block {
-        padding: 5px;
+        text-align: center;
     }
 
     .history_block_text {
-        font-size: 11px;
+        font-size: 20px;
     }
 
     .info_content {
@@ -282,6 +296,15 @@ a {
 
     .info_underline {
         width: 300px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+
     }
 
 }
@@ -309,19 +332,13 @@ a {
 }
 
 @media(max-width: 637px) {
-    .history_block_years {
-        width: 50px;
-        height: 50px;
-        font-size: 15px;
-    }
 
-    .history_years {
-        gap: 40px;
-    }
+
+
 
     .history_block_text {
-        line-height: 15px;
-        font-size: 8px;
+
+        font-size: 14px;
     }
 
     .history_content {
@@ -350,10 +367,6 @@ a {
         padding: 5px;
     }
 
-    .history_block_years {
-        font-size: 12px;
-        height: 45px;
-    }
 
     .welcome_image {
         width: 450px;
@@ -396,7 +409,7 @@ a {
 
 
     .welcome_image {
-        width: 250px;
+        width: 100%;
     }
 
     .info_underline {
@@ -405,26 +418,6 @@ a {
 
     .info_content {
         max-width: 300px;
-    }
-
-    .history_block_years {
-        height: auto;
-        width: auto;
-        font-size: 9px;
-        padding: 5px;
-    }
-
-    .history_years {
-        gap: 2px;
-    }
-
-    .history_block {
-        padding: 2px;
-    }
-
-    .history_block_text {
-        font-size: 8px;
-        line-height: 10px;
     }
 
     .welcome_card_content_title {
@@ -455,47 +448,27 @@ a {
 
 }
 
-@media(max-width: 460px) {
-    .history_block_text {
-        font-size: 5px;
-        line-height: 8px;
-    }
-}
 
-@media(max-width: 302px) {
-    .history_block_text {
-        font-size: 5px;
-        line-height: 8px;
-    }
 
-    .history_block_years {
-        width: 10px;
-        height: 10px;
-        font-size: 7px;
-    }
-}
 
 @media(max-width: 300px) {
-    .history_block_text {
-        font-size: 3px;
-        line-height: 8px;
-    }
+
     .welcome_text {
         font-size: 13px;
-    }
-    .welcome_image {
-        width: 180px;
     }
 
     .history_title {
         font-size: 20px;
     }
+
     .info_list {
         font-size: 10px;
     }
+
     .info_title {
         font-size: 20px;
     }
+
     .info_underline {
         width: 100px;
     }
