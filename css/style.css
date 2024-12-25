@@ -343,5 +343,72 @@ a {
 
     .history_block_years {
         font-size: 12px;
+        height: 45px;
+    }
+
+    .welcome_image {
+        width: 450px;
+    }
+
+    .welcome_card_content_title {
+        font-size: 25px;
+    }
+
+    .welcome_card_content_text {
+        font-size: 9px;
+    }
+
+    .welcome_card {
+        height: auto;
+    }
+
+    .info_list_style {
+        margin-right: 10px;
+    }
+
+    .info_content {
+        max-width: 100px;
+    }
+
+    .history_line {
+        width: 80px;
+    }
+
+    .top_line {
+        top: -31px;
+    }
+
+    .down_line {
+        bottom: -31px;
+    }
+}
+
+@media(max-width: 330px) {
+    .info_title {
+        font-size: 30px;
+    }
+
+    .welcome_image {
+        width: 400px;
+    }
+    .info_underline {
+        width: 200px;
+    }
+    .info_content {
+        max-width: 79px;
+    }
+    .history_block_years {
+        height: 25px;
+        font-size: 9px;
+        padding: 5px;
+    }
+    .history_years  {
+        gap: 35px;
+    }
+    .history_block {
+        padding: 2px;
+    }
+    .history {
+        background-size: cover;
     }
 }
