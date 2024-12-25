@@ -334,9 +334,11 @@ a {
     .info_underline {
         width: 200px;
     }
+
     .info_title {
         font-size: 35px;
     }
+
     .info_list_style {
         margin-right: 20px;
     }
@@ -390,7 +392,7 @@ a {
 }
 
 @media(max-width: 514px) {
-   
+
 
     .welcome_image {
         width: 250px;
@@ -424,15 +426,31 @@ a {
         font-size: 3px;
         line-height: 10px;
     }
+
     .welcome_card_content_title {
         font-size: 15px;
     }
+
     .welcome_cards {
         flex-wrap: wrap;
     }
+
     .history_title {
         font-size: 50px;
     }
-    
+
+    .history_line {
+        border: 1px solid #EBB8DE;
+        width: 70px;
+    }
+
+    .top_line {
+        top: -35px;
+    }
+
+    .down_line {
+        bottom: -35px;
+    }
+
 
 }
